@@ -22,6 +22,10 @@ Bar.App {
 .App-link {
   color: #61dafb;
 }
+.App{
+    width:90%;
+    margin:auto;
+}
 
 @keyframes App-logo-spin {
   from {

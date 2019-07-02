@@ -20,7 +20,7 @@ function App() {
       <h1>Posts-App</h1>
       <NavBar routes={routes}/>
        {routes.map(el=>{
-          return <Route component={el.component} path={el.path} />
+          return <Route component={el.component} path={el.path} key={el.text}/>
       })}
       
       

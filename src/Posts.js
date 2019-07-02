@@ -10,10 +10,13 @@ class Posts extends Component{
         this.state={posts:[], selectedPost: null};
     }
     componentDidMount(){
-        const url="https://jsonplaceholder.typicode.com/posts";
+        const url="/posts";
         axios.get(url)
         .then(response=>{
             this.setState({posts: response.data})
+        })
+        .catch(err=>{
+            console.log(err)
         })
         
     }
